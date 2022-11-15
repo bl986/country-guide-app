@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #3d65e6;
+}
+
+/* The em is simply the font size. In an element with a 2in font, 1em thus means 2in.
+Expressing sizes, such as margins and paddings, in em means they are related to the font size,
+and if the user has a big font (e.g., on a big screen) or a small font (e.g., on a handheld device),
+the sizes will be in proportion. */
+.container {
+    background-color: #fff;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: .62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, .25);
+}
+
+.container h2{
+    font-weight: 600;
+    color: #222a33;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.data-wrapper{
+    margin-bottom: 1em;
+    letter-spacing: .3px;
+}
+
+.container h4{
+    display: inline;
+    font-weight: 500;
+    color: #222a33;
+}
+
+.container span{
+    color: #5d6275;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff565a;
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+}
+
+.search-wrapper button{
+    font-size: 1em;
+    background-color: #3d65e6;
+    color: #fff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    transition: .1s;
+}
+/* something I added myself based on what I have learned before */
+.search-wrapper button:active{
+    background-color: #222a33;
+    color: #fff;
+    scale: 0.9;
+}
+
+.search-wrapper input{
+    font-size: 1em;
+    padding: 0 .62em;
+    border: none;
+    border-bottom: 2px solid #3d65e6;
+    outline: none;
+    color: #222a33;
+}
+
+#result{
+    margin-top: 1.25em;
+}
+
+.container .flag-img{
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+}
